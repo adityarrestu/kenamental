@@ -1,0 +1,15 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.btns{
+    display: table;
+    margin: 30px auto;
+}
+.customNextBtn, .customPreviousBtn{
+    float: left;
+    background: #a46fda;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
