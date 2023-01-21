@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.app')
 
 @section('style')
     <style>
@@ -33,6 +33,7 @@
     @include('partials._hero')
     @include('partials._service')
     @include('partials._psikolog')
+    @include('partials._testimoni')
 @endsection
 
 @section('script')

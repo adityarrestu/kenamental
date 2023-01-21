@@ -2,7 +2,7 @@
     class="p-5 mb-4 text-light rounded-3"
     style="background-color: #a46fda"
 >
-    <div class="d-flex flex-row">
+    <div class="container-md d-flex flex-row">
         <div class="container-fluid py-5">
             <h1 class="display-3">
                             Kami Peduli dengan

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Kena Mental</a>
+      <a class="navbar-brand" href="#">Kena Mental.com</a>
       <button
         class="navbar-toggler"
         type="button"
