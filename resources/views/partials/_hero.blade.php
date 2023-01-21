@@ -11,13 +11,14 @@
             <p class="col-md-8 fs-4">
                 Konsultasikan dirimu bersama Psikolog Klinis Terbaik!
             </p>
-            <button
+            <a
+                href="/daftar-konseling"
                 class="btn btn-light btn-lg fw-bold rounded-pill px-4 mt-4"
                 style="color: #a46fda"
                 type="button"
             >
                 Jadwalkan Konsultasi
-            </button>
+            </a>
         </div>
         <img src="{{ asset('images/bannerimg.png') }}" style="object-fit: contain" alt="" />
     </div>

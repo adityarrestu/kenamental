@@ -2,6 +2,16 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.btn-violet {
+    background-color: #a46fda;
+    color:#fff;
+    transition: 0.2s;
+}
+
+.btn-violet:hover {
+    background-color: #855aaf;
+}
+
 .btns{
     display: table;
     margin: 30px auto;

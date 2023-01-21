@@ -16,16 +16,6 @@
             color: #fff;
             transition: all 0.5s;
         }
-
-        #btn-violet {
-            background-color: #a46fda;
-            color:#fff;
-            transition: 0.2s;
-        }
-
-        #btn-violet:hover {
-            background-color: #855aaf;
-        }
     </style>
 @endsection
 
@@ -38,7 +28,7 @@
 
 @section('script')
     <script>
-        const nav = document.querySelector(".navbar");
+            const nav = document.querySelector(".navbar");
             const btnLogin = document.querySelector("#btnLogin");
 
             window.addEventListener("scroll", () => {

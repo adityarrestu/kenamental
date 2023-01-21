@@ -7,7 +7,7 @@
           <div class="card-body">
             <h5 class="card-title fw-bold">Konseling Online</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" id="btn-violet" class="btn">Jadwalkan Konseling</a>
+            <a href="/daftar-konseling" class="btn btn-violet">Jadwalkan Konseling</a>
           </div>
       </div>
 
@@ -16,7 +16,7 @@
           <div class="card-body">
             <h5 class="card-title fw-bold">Tanya Psikolog</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" id="btn-violet" class="btn">Tanya Sekarang</a>
+            <a href="/tanya-psikolog" class="btn btn-violet">Tanya Sekarang</a>
           </div>
       </div>
 
@@ -25,7 +25,7 @@
           <div class="card-body">
             <h5 class="card-title fw-bold">Tes Mental</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" id="btn-violet" class="btn">Tes Sekarang</a>
+            <a href="/tes-mental" class="btn btn-violet">Tes Sekarang</a>
           </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Kena Mental.com</a>
+      <a class="navbar-brand" href="/">Kena Mental.com</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -18,13 +18,13 @@
       >
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item px-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="#layanan">Layanan</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#">Tes Mental</a>
+            <a class="nav-link" href="/tes-mental">Tes Mental</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="#psikolog">Psikolog</a>
@@ -33,13 +33,14 @@
             <a class="nav-link" href="#testimoni">Testimoni</a>
           </li>
         </ul>
-        <button
-          id="btnLogin"
-          class="btn btn-light rounded-pill px-4"
-          type="submit"
-        >
-          Login
-        </button>
+        <a href="/login">
+            <button
+              id="btnLogin"
+              class="btn btn-light rounded-pill px-4"
+            >
+                Login
+            </button>
+        </a>
       </div>
     </div>
   </nav>
