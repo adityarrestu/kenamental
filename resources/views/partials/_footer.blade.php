@@ -19,7 +19,7 @@
         </div>
         <dir class="text-center pt-4">
             <h4>Konseling dengan Psikolog Klinis Terbaik: Profesional, Berempati, dan Non-Judgmental</h4>
-            <h4>“Bicarakan isi hatimu, temukan jalankeluar atas masalahmu.</h4>
+            <h4>“Bicarakan isi hatimu, temukan jalan keluar atas masalahmu.</h4>
         </dir>
         <p class="text-center text-muted">© 2023 Kena Mental.com</p>
     </div>
