@@ -1,5 +1,5 @@
 import _ from 'lodash';
-window._ = _;
+window._ = lodash;
 
 import 'bootstrap';
 
