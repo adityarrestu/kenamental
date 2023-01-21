@@ -12,7 +12,7 @@
                 Konsultasikan dirimu bersama Psikolog Klinis Terbaik!
             </p>
             <a
-                href="/daftar-konseling"
+                href="/conseling"
                 class="btn btn-light btn-lg fw-bold rounded-pill px-4 mt-4"
                 style="color: #a46fda"
                 type="button"

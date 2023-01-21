@@ -2,6 +2,25 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.navbar {
+    transition: all 0.5s;
+}
+
+.nav-scrolled {
+    background-color: #fff;
+    color: #272727;
+}
+
+.nav-violet {
+    background-color: #a46fda;
+}
+
+#btnLogin.nav-scrolled {
+    background-color: #a46fda;
+    color: #fff;
+    transition: all 0.5s;
+}
+
 .btn-violet {
     background-color: #a46fda;
     color:#fff;
@@ -16,7 +35,7 @@ body {
     display: table;
     margin: 30px auto;
 }
-.customNextBtn, .customPreviousBtn{
+.btn-next, .btn-prev {
     float: left;
     background: #a46fda;
     color: #fff;

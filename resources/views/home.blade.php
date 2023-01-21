@@ -1,29 +1,12 @@
 @extends('layout.app')
 
-@section('style')
-    <style>
-        .navbar {
-            transition: all 0.5s;
-        }
-
-        .nav-scrolled {
-            background-color: #fff;
-            color: #272727;
-        }
-
-        #btnLogin.nav-scrolled {
-            background-color: #a46fda;
-            color: #fff;
-            transition: all 0.5s;
-        }
-    </style>
-@endsection
-
 @section('content')
-    @include('partials._hero')
-    @include('partials._service')
-    @include('partials._psikolog')
-    @include('partials._testimoni')
+    <div class="mb-5">
+        @include('partials._hero')
+        @include('partials._service')
+        @include('partials._psikolog')
+        @include('partials._testimoni')
+    </div>
 @endsection
 
 @section('script')

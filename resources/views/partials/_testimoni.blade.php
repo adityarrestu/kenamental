@@ -1,19 +1,19 @@
-<section id="testimoni" class="container py-5">
+<section id="testimoni" class="container py-5 mb-5">
     <div class="row">
         <div class="d-flex flex-column col-4">
             <h1 class="fw-bold">Testimoni</h1>
-            <p class="fs-4">Apa kata mereka setelah konsultasi bersama kami</p>
+            <p class="fs-4">Apa kata mereka setelah konsultasi bersama kami?</p>
             <div class="owl-nav">
-                <div class="customNextBtn rounded-circle px-3 mx-2">
+                <div class="customNextBtnTestimoni btn-next rounded-circle px-3 mx-2">
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
-                <div class="customPreviousBtn rounded-circle px-3 mx-2">
+                <div class="customPreviousBtnTestimoni btn-prev rounded-circle px-3 mx-2">
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
         </div>
         <div class="col overflow-hidden">
-            <div class="owl-carousel">
+            <div id="testimoniCarousel" class="owl-carousel">
                 <div class="card" style="width: 15rem">
                     <img src="{{ asset('images/bannerimg.png') }}" class="card-img-top" alt="..." />
                     <div class="card-body">

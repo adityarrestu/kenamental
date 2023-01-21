@@ -33,14 +33,23 @@
             <a class="nav-link" href="#testimoni">Testimoni</a>
           </li>
         </ul>
-        <a href="/login">
-            <button
-              id="btnLogin"
-              class="btn btn-light rounded-pill px-4"
-            >
-                Login
-            </button>
+        @auth
+        <a
+            href="/conseling"
+            id="btnLogin"
+            class="btn btn-light rounded-pill px-4"
+        >
+            Jadwalkan Konsultasi
         </a>
+        @else
+        <a
+            href="/login"
+            id="btnLogin"
+            class="btn btn-light rounded-pill px-4"
+        >
+            Login
+        </a>
+        @endauth
       </div>
     </div>
   </nav>

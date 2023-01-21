@@ -19,9 +19,16 @@ $(document).ready(function () {
 
     // Custom Button
     $('.customNextBtn').click(function() {
-        owl.trigger('next.owl.carousel');
+        $('#psikologCarousel').trigger('next.owl.carousel');
     });
     $('.customPreviousBtn').click(function() {
-        owl.trigger('prev.owl.carousel');
+        $('#psikologCarousel').trigger('prev.owl.carousel');
+    });
+
+    $('.customNextBtn').click(function() {
+        $('#testimoniCarousel').trigger('next.owl.carousel');
+    });
+    $('.customPreviousBtnTestimoni').click(function() {
+        $('#testimoniCarousel').trigger('prev.owl.carousel');
     });
 });
