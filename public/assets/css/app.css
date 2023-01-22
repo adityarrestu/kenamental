@@ -29,6 +29,7 @@ body {
 
 .btn-violet:hover {
     background-color: #855aaf;
+    color: #fff;
 }
 
 .btns{
@@ -41,4 +42,9 @@ body {
     color: #fff;
     padding: 10px;
     cursor: pointer;
+}
+
+.bg-violet {
+    background: #a46fda;
+    color: #fff;
 }

@@ -1,8 +1,8 @@
 @extends('layout.app')
 
 @section('content')
-<div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh">
-    <div class="col-lg-5 col-xl-5 card px-5 py-4">
+<div class="container d-flex align-items-center justify-content-center py-5" style="min-height: 100vh">
+    <div class="col-lg-5 col-xl-5 card px-5 py-4 mt-4">
         <h4 class="text-center fw-bold mb-4">
             Buat akun
         </h4>

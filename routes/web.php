@@ -28,3 +28,7 @@ Route::get('/register', function () {
 Route::get('/conseling', function () {
     return view('conseling/list-psikolog');
 });
+
+Route::get('/conseling/checkout', function () {
+    return view('conseling/checkout');
+});
