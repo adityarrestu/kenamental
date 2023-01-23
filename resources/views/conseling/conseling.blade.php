@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container d-flex flex-row align-items-center" style="min-height: 100vh;">
-    <div class="position-fixed" style="top: 6rem; z-index: -1">
+    <div class="position-absolute" style="top: 6rem; z-index: -1">
         <div class="display-6 mb-2">Jadwalkan Konsultasi Anda</div>
         <h2>Pilih Psikolog</h2>
         <div class="py-3">
@@ -120,7 +120,7 @@
         </div>
 
         {{-- Component --}}
-        <div x-show="open" class="card position-fixed pt-4 pb-3 px-4 w-50" style="right: 50px; ">
+        <div x-show="open" class="card position-absolute pt-4 pb-3 px-4 w-50" style="right: 50px; ">
             <button class="position-absolute btn btn-violet rounded-circle" @click="open = false" style="top: 8px; left: 8px;">
                 <i class="fa-solid fa-xmark"></i>
             </button>
