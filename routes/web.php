@@ -13,18 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home Page
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', function () {
-    return view('auth/login');
-});
+// Show Login Form
+Route::get('/login', [UserController::class, 'login']);
 
-Route::get('/register', function () {
-    return view('auth/register');
-});
+// Show Login Form
+Route::get('/register', [UserController::class, 'register']);
 
+// User Authenticate
+Route::post('/user/auth', [UserController::class, 'auth']);
+
+// Create/Store New User
+Route::post('/user/create', [UserController::class, 'create']);
+
+// User Logout
+Route::post('/logout', [UserController::class, 'logout']);
+
+// Show Conseling Form
 Route::get('/conseling', function () {
     return view('conseling/conseling');
 });

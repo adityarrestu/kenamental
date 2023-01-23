@@ -12,7 +12,7 @@
                     <h4 class="text-center mb-4">
                         Login akun
                     </h4>
-                    <form class="d-flex flex-column" method="POST" action="/users/authenticate">
+                    <form class="d-flex flex-column" method="POST" action="/user/auth">
                         @csrf
 
                         <div class="form-input mb-3">
@@ -41,10 +41,10 @@
                             href=""
                             class="btn btn-violet rounded-pill w-100 mb-3"
                         >LOGIN</a>
-                        <a
-                            href=""
+                        <button
+                            type="submit"
                             class="btn btn-outline-dark rounded-pill w-100 mb-3"
-                        ><i class="fa-brands fa-google mx-2"></i>Login dengan Google</a>
+                        ><i class="fa-brands fa-google mx-2"></i>Login dengan Google</button>
                         <p class="my-3">Belum memiliki akun? <a  href="/register" class="text-decoration-none text-muted fw-bold mx-2">Buat akun</a></p>
                     </form>
                 </div>

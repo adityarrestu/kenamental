@@ -6,7 +6,7 @@
         <h4 class="text-center fw-bold mb-4">
             Buat akun
         </h4>
-        <form class="d-flex flex-column" method="POST" action="/users/register">
+        <form class="d-flex flex-column" method="POST" action="/user/create">
             @csrf
             <div class="form-input mb-3">
                 <label for="inputNama" class="mb-2 mx-2">nama (bisa menggunakan inisial)</label>
@@ -44,10 +44,10 @@
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
             </div>
-            <a
-                href=""
+            <button
+                type="submit"
                 class="btn btn-violet rounded-pill w-100 mt-4 mb-3"
-            >Daftar Akun</a>
+            >Daftar Akun</button>
             <div class="d-flex flex-row rounded-pill mt-3">
                 <i class="fa-solid fa-user-lock px-3 py-2"></i>
                 <p class="text-muted" style="font-size: 0.8rem;">Data kamu dijamin aman, hanya digunakan untuk keperluan konseling dan tidak akan disebarluaskan</p>
