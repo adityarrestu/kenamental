@@ -32,7 +32,7 @@ Route::post('/user/auth', [UserController::class, 'auth']);
 Route::post('/user/create', [UserController::class, 'create']);
 
 // User Logout
-Route::post('/logout', [UserController::class, 'logout']);
+Route::post('/user/logout', [UserController::class, 'logout']);
 
 // Show Conseling Form
 Route::get('/conseling', function () {

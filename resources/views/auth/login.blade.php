@@ -21,17 +21,13 @@
                                 value="{{old('email')}}" />
 
                             @error('email')
-                            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                            <p class="text-danger text-xs mt-1">{{$message}}</p>
                             @enderror
                         </div>
                         <div class="form-input mb-3">
                             <label for="inputPassword" class="mb-2 mx-2">kata sandi</label>
                             <input type="password" name="password" class="form-control rounded-pill" id="inputPassword" placeholder="Masukkan kata sandi"
                                 value="{{old('password')}}"/>
-
-                            @error('email')
-                            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
-                            @enderror
                         </div>
                         <a
                             href=""

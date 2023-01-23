@@ -34,13 +34,39 @@
           </li>
         </ul>
         @auth
-        <a
-            href="/conseling"
-            id="btnLogin"
-            class="btn btn-light rounded-pill px-4"
-        >
-            Jadwalkan Konsultasi
-        </a>
+        <div class="dropdown">
+            <button
+                class="btn dropdown-toggle text-white"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                Halo, {{auth()->user()->name}}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="dropdown-item">
+                    <a
+                        href=""
+                        class="btn"
+                    >
+                        Pengaturan Akun
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <form method="POST" action="/user/logout">
+                        @csrf
+                        <button
+                            type="submit"
+                            id="btnLogin"
+                            class="btn"
+                        >
+                            Logout
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
         @else
         <a
             href="/login"

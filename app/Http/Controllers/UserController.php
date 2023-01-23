@@ -46,7 +46,7 @@ class UserController extends Controller
     {
         $formFields = $request->validate([
             'email'=> ['required', 'email'],
-            'password'=> ['required', 'password'],
+            'password'=> 'required',
         ]);
 
         if(auth()->attempt($formFields)) {
@@ -54,6 +54,7 @@ class UserController extends Controller
             return redirect('/')->with('message', 'Berhasil Login');
 
         }
+
         return back()->withErrors(['email'=>'Email atau password tidak valid'])->onlyInput('email');
     }
 
@@ -64,6 +65,7 @@ class UserController extends Controller
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+
         return redirect('/')->with('message','Berhasil Logout');
     }
 }
