@@ -21,16 +21,16 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#layanan">Layanan</a>
+            <a class="nav-link" href="/#layanan">Layanan</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="/tes-mental">Tes Mental</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#psikolog">Psikolog</a>
+            <a class="nav-link" href="/#psikolog">Psikolog</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#testimoni">Testimoni</a>
+            <a class="nav-link" href="/#testimoni">Testimoni</a>
           </li>
         </ul>
         @auth

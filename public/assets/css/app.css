@@ -48,3 +48,28 @@ body {
     background: #a46fda;
     color: #fff;
 }
+
+.img-detail {
+    max-height: 12rem;
+}
+
+.tag-item {
+    font-size: 0.8rem;
+}
+
+.list-psikolog {
+    max-height: 85vh;
+}
+
+.list-psikolog::-webkit-scrollbar {
+    width: 12px;
+}
+
+.list-psikolog::-webkit-scrollbar-thumb {
+    background-color: linear-gradient(transparent, #1d1d1d);
+    border-radius: 6px;
+}
+
+.list-psikolog::-webkit-scrollbar-thumb:hover {
+    background-color: linear-gradient(transparent, #272727);
+}
