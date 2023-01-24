@@ -42,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Relationship with Konseling
+    public function konseling() {
+        return $this->hasMany(Konseling::class, 'user_id');
+    }
 }

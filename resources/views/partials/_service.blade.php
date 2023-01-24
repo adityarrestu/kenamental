@@ -1,5 +1,5 @@
 <section id="layanan" class="container-fluid mt-4 px-0 py-5">
-    <h1 class="text-center fw-bold">Layanan Kami</h1>
+    <h1 class="text-center fw-bold mt-4">Layanan Kami</h1>
 
     <div class="d-flex flex-wrap align-items-center justify-content-center">
       <div class="card m-3" style="width: 18rem;">

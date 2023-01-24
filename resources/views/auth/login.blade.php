@@ -36,7 +36,10 @@
                         <a
                             href=""
                             class="btn btn-violet rounded-pill w-100 mb-3"
-                        >LOGIN</a>
+                        >
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            LOGIN
+                        </a>
                         <button
                             type="submit"
                             class="btn btn-outline-dark rounded-pill w-100 mb-3"

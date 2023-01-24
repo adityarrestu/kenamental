@@ -18,7 +18,7 @@
       >
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item px-2">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="/#">Home</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="/#layanan">Layanan</a>
@@ -36,20 +36,20 @@
         @auth
         <div class="dropdown">
             <button
-                class="btn dropdown-toggle text-white"
+                class="btn bg-white text-dark white dropdown-toggle"
                 type="button"
-                id="dropdownMenuButton"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
             >
                 Halo, {{auth()->user()->name}}
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu" aria-labelledby="btnAkun">
                 <li class="dropdown-item">
                     <a
-                        href=""
+                        href="/user/settings"
                         class="btn"
                     >
+                        <i class="fa-solid fa-gear me-2"></i>
                         Pengaturan Akun
                     </a>
                 </li>
@@ -58,9 +58,10 @@
                         @csrf
                         <button
                             type="submit"
-                            id="btnLogin"
+                            id="btnLogout"
                             class="btn"
                         >
+                            <i class="fa-solid fa-right-from-bracket me-2"></i>
                             Logout
                         </button>
                     </form>

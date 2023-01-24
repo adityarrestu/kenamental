@@ -68,4 +68,32 @@ class UserController extends Controller
 
         return redirect('/')->with('message','Berhasil Logout');
     }
+
+    // Show User Settings
+    public function settings() {
+        return view('user.settings');
+    }
+
+    // Update User Data
+    public function update(Request $request, User $user) {
+        $formFields = $request->validate([
+            'name' => 'required',
+            'whatsapp' => 'required',
+            'email' => ['required', 'email'],
+            'password' => 'required',
+        ]);
+
+        $user->update($formFields);
+
+        return back()->with('message', 'Data akun berhasil diubah');
+    }
+
+    // Delete User
+    public function destroy(User $user) {
+
+        auth()->logout();
+        $user->delete();
+
+        return redirect('/')->with('message', 'Akun berhasil dihapus');
+    }
 }

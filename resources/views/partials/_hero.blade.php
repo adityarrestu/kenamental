@@ -1,5 +1,5 @@
 <section
-    class="p-5 mb-4 text-light rounded-3"
+    class="p-5 mb-4 text-light"
     style="background-color: #a46fda"
 >
     <div class="container-md d-flex flex-row">
