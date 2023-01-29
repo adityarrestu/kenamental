@@ -33,17 +33,17 @@
                             href=""
                             class="text-muted text-decoration-none text-center mb-3"
                         >Lupa kata sandi</a>
-                        <a
-                            href=""
+                        <button
+                            type="submit"
                             class="btn btn-violet rounded-pill w-100 mb-3"
                         >
                             <i class="fa-solid fa-right-to-bracket"></i>
                             LOGIN
-                        </a>
-                        <button
-                            type="submit"
+                        </button>
+                        <a
+                            href=""
                             class="btn btn-outline-dark rounded-pill w-100 mb-3"
-                        ><i class="fa-brands fa-google mx-2"></i>Login dengan Google</button>
+                        ><i class="fa-brands fa-google mx-2"></i>Login dengan Google</a>
                         <p class="my-3">Belum memiliki akun? <a  href="/register" class="text-decoration-none text-muted fw-bold mx-2">Buat akun</a></p>
                     </form>
                 </div>

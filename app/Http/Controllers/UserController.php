@@ -52,7 +52,6 @@ class UserController extends Controller
         if(auth()->attempt($formFields)) {
             $request->session()->regenerate();
             return redirect('/')->with('message', 'Berhasil Login');
-
         }
 
         return back()->withErrors(['email'=>'Email atau password tidak valid'])->onlyInput('email');
@@ -82,6 +81,9 @@ class UserController extends Controller
             'email' => ['required', 'email'],
             'password' => 'required',
         ]);
+
+        //hash
+        $formFields['password'] = bcrypt($formFields['password']);
 
         $user->update($formFields);
 

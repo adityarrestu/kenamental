@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Konseling;
 use App\Models\Psikolog;
+use App\Models\Testimoni;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
@@ -37,6 +39,10 @@ class WebController extends Controller
 
     // Show Dashboard
     public function dashboard() {
-        return view('dashboard.index');
+        return view('dashboard.index', [
+            'psikologs' => Psikolog::all(),
+            'testimonis' => Testimoni::all(),
+            'konselings' => Konseling::all(),
+        ]);
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\KonselingController;
+use App\Http\Controllers\PsikologController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
@@ -54,3 +55,18 @@ Route::post('/conseling/payment', [KonselingContorller::class, 'payment']);
 
 // Show Himitsu Login
 Route::get('/auth/super', [WebController::class, 'login']);
+
+// Show Dashboard
+Route::get('/sp/dashboard', [WebController::class, 'dashboard']);
+
+// Show Psikolog Register Form
+Route::get('/sp/psikolog/register', [PsikologController::class, 'register']);
+
+// Create New Psikolog Data
+Route::get('/sp/psikolog/create', [PsikologController::class, 'create']);
+
+// Show Psikolog Data Edit Form
+Route::get('/sp/psikolog/edit', [PsikologController::class, 'edit']);
+
+// Update Psikolog Data
+Route::get('/sp/psikolog/edit', [PsikologController::class, 'update']);
