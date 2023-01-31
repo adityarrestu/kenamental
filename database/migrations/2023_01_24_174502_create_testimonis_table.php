@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('testimonis', function (Blueprint $table) {
             $table->id();
-            $table->string('images');
+            $table->string('testimoni');
             $table->timestamps();
         });
     }

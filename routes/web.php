@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\KonselingController;
 use App\Http\Controllers\PsikologController;
+use App\Http\Controllers\TestimoniController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
@@ -63,10 +64,19 @@ Route::get('/sp/dashboard', [WebController::class, 'dashboard']);
 Route::get('/sp/psikolog/register', [PsikologController::class, 'register']);
 
 // Create New Psikolog Data
-Route::get('/sp/psikolog/create', [PsikologController::class, 'create']);
+Route::post('/sp/psikolog/create', [PsikologController::class, 'create']);
 
 // Show Psikolog Data Edit Form
 Route::get('/sp/psikolog/edit', [PsikologController::class, 'edit']);
 
 // Update Psikolog Data
-Route::get('/sp/psikolog/edit', [PsikologController::class, 'update']);
+Route::put('/sp/psikolog/{psikolog}', [PsikologController::class, 'update']);
+
+// Delete Psikolog Data
+Route::delete('/sp/psikolog/{psikolog}', [PsikologController::class, 'destroy']);
+
+// Create New Testimoni
+Route::post('/sp/testimoni/create', [TestimoniController::class, 'create']);
+
+// Delete Testimoni
+Route::delete('/sp/testimoni/{testimoni}', [TestimoniController::class, 'destroy']);

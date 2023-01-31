@@ -10,6 +10,6 @@ class Testimoni extends Model
     use HasFactory;
 
     protected $fillable = [
-        'image'
+        'testimoni'
     ];
 }

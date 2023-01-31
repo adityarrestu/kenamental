@@ -14,8 +14,9 @@
         </div>
         <div class="col overflow-hidden">
             <div id="testimoniCarousel" class="owl-carousel">
-                <x-carousel-testimoni />
-                <x-carousel-testimoni />
+                @foreach ($testimonis as $testimoni)
+                    <x-carousel-testimoni :testimoni="$testimoni" />
+                @endforeach
             </div>
         </div>
     </div>

@@ -1,11 +1,22 @@
 @props(['psikolog'])
 
+@php
+    $tags = explode(',', $psikolog->tags)
+@endphp
+
 <div class="card w-100">
-    <img src="{{ asset('images/bannerimg.png') }}" class="card-img-top" alt="..." />
+    <img src="{{ asset('storage/' . $psikolog->image) }}" class="card-img-top" alt="..." />
     <div class="card-body">
-        <h5 class="card-title">{{$psikolog->name}}</h5>
-        <p class="card-text">
-            {{$psikolog->about}}
-        </p>
+        <p class="card-title fw-bold truncate text-truncate">{{$psikolog->name}}</p>
+        <ul class="ps-0">
+            @foreach ($tags as $tag)
+            <li class="list-unstyled">
+                <small>
+                    <i class="fa-solid fa-circle-check pe-1"></i>
+                    {{$tag}}
+                </small>
+            </li>
+            @endforeach
+        </ul>
     </div>
 </div>

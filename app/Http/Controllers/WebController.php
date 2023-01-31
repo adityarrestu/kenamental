@@ -12,7 +12,8 @@ class WebController extends Controller
     // Show Home
     public function index() {
         return view('home', [
-            'psikologs' => Psikolog::all()
+            'psikologs' => Psikolog::all(),
+            'testimonis' => Testimoni::all(),
         ]);
     }
 

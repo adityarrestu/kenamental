@@ -1,3 +1,5 @@
+@props(['testimoni'])
+
 <div class="card w-100">
-    <img src="{{ asset('images/bannerimg.png') }}" class="card-img-top" alt="..." />
+    <img src="{{ asset('storage/' . $testimoni->testimoni) }}" class="card-img-top" alt="..." />
 </div>

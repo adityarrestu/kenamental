@@ -49,6 +49,14 @@ body {
     color: #fff;
 }
 
+.text-violet {
+    color: #a46fda;
+}
+
+.text-violet:hover {
+    color: #855aaf;
+}
+
 .img-detail {
     max-height: 12rem;
 }
