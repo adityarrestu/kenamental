@@ -45,52 +45,30 @@
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div
-            class="tab-pane pt-4 px-3 active"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-        >
-            <button class="btn btn-violet">
-                <a
-                    href="/sp/psikolog/register"
-                    class=" text-decoration-none text-light"
-                >
-                    Tambah Data Psikolog
-                </a>
-            </button>
-            <table class="table mt-4">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"> profile </div>
-          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"> messages </div>
+            <div
+                class="tab-pane pt-4 px-3 active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+            >
+            @include('partials._psikolog-dashboard')
+            </div>
+            <div
+                class="tab-pane pt-4 px-3"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+            >
+            @include('partials._testimoni-dashboard')
+            </div>
+            <div
+                class="tab-pane pt-4 px-3"
+                id="messages"
+                role="tabpanel"
+                aria-labelledby="messages-tab"
+            >
+            @include('partials._jadwal-konseling-dashboard')
+            </div>
         </div>
     </nav>
 </div>

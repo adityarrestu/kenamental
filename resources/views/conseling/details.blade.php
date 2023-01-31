@@ -4,16 +4,23 @@
 <div class="container d-flex flex-row align-items-center" style="min-height: 100vh;">
     @include('partials._conseling')
 
-    <div class="card position-absolute pt-4 pb-3 px-4 w-50" style="right: 50px; ">
+    <div class="card position-absolute pt-4 pb-3 px-4 mt-5 w-50" style="right: 50px; ">
         <a href="{{url()->previous()}}" class="position-absolute btn btn-violet rounded-circle" style="top: 8px; left: 8px;">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
 
         <div class="d-flex flex-row mb-3">
-            <img src="{{asset('/images/psikolog-1.png')}}" class="img-detail" alt="">
+            <img src="{{asset('storage/' . $psikolog->image)}}" class="img-detail" alt="">
             <div class="d-flex flex-column mx-4">
                 <h5 class="fw-bold">{{$psikolog->name}}</h5>
                 <x-psikolog-tags tagsCsv="{{$psikolog->tags}}" />
+                <div class="d-flex flex-row mb-2">
+                    <i class="fa-solid fa-graduation-cap pt-2"></i>
+                    <div class="d-flex flex-column mx-2 mt-1">
+                        <p class="fw-bold mb-1">Pendidikan</p>
+                        <small class="text-muted">{{$psikolog->education}}</small>
+                    </div>
+                </div>
                 <div class="d-flex flex-row">
                     <i class="fa-solid fa-file-shield pt-2"></i>
                     <div class="d-flex flex-column mx-2 mt-1">

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh">
     <div class="col-lg-11 col-xl-10 card flex-row overflow-hidden mt-5">
-        <img src="{{ asset('images/bannerimg.png') }}" class="col-6 d-none d-md-flex" style="background-color: #a46fda; object-fit: contain" alt="conseling-online">
+        <img src="{{ asset('images/DOKTER.png') }}" class="col-6 d-none d-md-flex" style="background-color: #a46fda; object-fit: contain" alt="conseling-online">
 
         <div class="card-body col">
             <div class="row justify-content-center">
