@@ -34,8 +34,10 @@ class PsikologController extends Controller
     }
 
     // Show Psikolog Data Edit Form
-    public function edit() {
-        return view('dashboard.psikolog.edit-psikolog');
+    public function edit(Psikolog $psikolog) {
+        return view('dashboard.psikolog.edit-psikolog', [
+            'psikolog' => $psikolog
+        ]);
     }
 
     // Update Data Psikolog
@@ -46,6 +48,10 @@ class PsikologController extends Controller
             'education'=> 'required',
             'tags' => 'required',
         ]);
+
+        if ($request->hasFile('image')) {
+            $formFields['image'] = $request->file('image')->store('psikolog', 'public');
+        }
 
         $psikolog->update($formFields);
 

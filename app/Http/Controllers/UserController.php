@@ -51,7 +51,12 @@ class UserController extends Controller
 
         if(auth()->attempt($formFields)) {
             $request->session()->regenerate();
-            return redirect('/')->with('message', 'Berhasil Login');
+
+            if(auth()->user()->role == 'admin') {
+                return redirect('/sp/dashboard')->with('message', 'Berhasil login sebagai admin');
+            } else {
+                return redirect('/')->with('message', 'Berhasil Login');
+            }
         }
 
         return back()->withErrors(['email'=>'Email atau password tidak valid'])->onlyInput('email');

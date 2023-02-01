@@ -28,7 +28,7 @@
                 </div>
                 <div class="d-flex flex-row mt-4 justify-content-end">
                     <a
-                        href="/sp/psikolog/edit"
+                        href="/sp/psikolog/{{$psikolog->id}}"
                         type="button"
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
@@ -71,11 +71,11 @@
         <p>Anda akan menghapus data ini?</p>
     </div>
     <div class="modal-footer">
-        <form method="POST" action="/sp/testimoni/{{$psikolog->id}}">
+        <form method="POST" action="/sp/psikolog/{{$psikolog->id}}">
             @csrf
             @method('DELETE')
             <button type="submit" class="btn btn-danger">Hapus</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
         </form>
     </div>
 </x-modal>

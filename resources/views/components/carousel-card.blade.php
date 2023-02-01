@@ -4,7 +4,7 @@
     $tags = explode(',', $psikolog->tags)
 @endphp
 
-<div class="card w-100">
+<div class="card w-100" style="height: 400px">
     <img src="{{ asset('storage/' . $psikolog->image) }}" class="card-img-top" alt="..." />
     <div class="card-body">
         <p class="card-title fw-bold truncate text-truncate">{{$psikolog->name}}</p>

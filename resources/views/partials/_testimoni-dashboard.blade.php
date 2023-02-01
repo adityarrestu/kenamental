@@ -30,6 +30,21 @@
                 </div>
             </div>
         </div>
+
+
+        <x-modal id="modalDelete" :title="$titleDelete">
+            <div class="modal-body">
+                <p>Anda akan menghapus Testimoni ini?</p>
+            </div>
+            <div class="modal-footer">
+                <form method="POST" action="/sp/testimoni/{{$testimoni->id}}">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Hapus</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                </form>
+            </div>
+        </x-modal>
         @endforeach
     @else
         <div class="d-flex align-items-center justify-content-center my-5 w-100">
@@ -64,20 +79,6 @@
             >
                 Buat Testimoni
             </button>
-        </form>
-    </div>
-</x-modal>
-
-<x-modal id="modalDelete" :title="$titleDelete">
-    <div class="modal-body">
-        <p>Anda akan menghapus Testimoni ini?</p>
-    </div>
-    <div class="modal-footer">
-        <form method="POST" action="/sp/testimoni/{{$testimoni->id}}">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class="btn btn-danger">Hapus</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </form>
     </div>
 </x-modal>

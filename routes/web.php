@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WebController::class, 'index']);
 
 // Show Login Form
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/login', [UserController::class, 'login'])->name('login');
 
 // Show Login Form
 Route::get('/register', [UserController::class, 'register']);
@@ -33,50 +33,57 @@ Route::post('/user/auth', [UserController::class, 'auth']);
 // Create/Store New User
 Route::post('/user/create', [UserController::class, 'create']);
 
-// User Logout
-Route::post('/user/logout', [UserController::class, 'logout']);
+// User Route
+Route::middleware(['auth', 'user-role:user'])->group(function ()
+{
+    // User Logout
+    Route::post('/user/logout', [UserController::class, 'logout']);
 
-// Show User Settings
-Route::get('/user/settings', [UserController::class, 'settings']);
+    // Show User Settings
+    Route::get('/user/settings', [UserController::class, 'settings']);
 
-// Update User Data
-Route::put('/user/{user}', [UserController::class, 'update']);
+    // Update User Data
+    Route::put('/user/{user}', [UserController::class, 'update']);
 
-// Delete User Data
-Route::delete('/user/destroy', [UserController::class, 'destroy']);
+    // Delete User Data
+    Route::delete('/user/destroy', [UserController::class, 'destroy']);
 
-// Show Conseling Form
-Route::get('/conseling', [KonselingController::class, 'konseling']);
+    // Show Conseling Form
+    Route::get('/conseling', [KonselingController::class, 'konseling']);
 
-// Show Conseling Detail
-Route::get('/conseling/{psikolog}', [KonselingController::class, 'details']);
+    // Show Conseling Detail
+    Route::get('/conseling/{psikolog}', [KonselingController::class, 'details']);
 
-// Conseling Payment
-Route::post('/conseling/payment', [KonselingContorller::class, 'payment']);
+    // Conseling Payment
+    Route::post('/conseling/payment', [KonselingContorller::class, 'payment']);
+});
 
-// Show Himitsu Login
-Route::get('/auth/super', [WebController::class, 'login']);
+// Admin Route
+Route::middleware(['auth', 'user-role:admin'])->group(function () {
 
-// Show Dashboard
-Route::get('/sp/dashboard', [WebController::class, 'dashboard']);
+    // Show Dashboard
+    Route::get('/sp/dashboard', [WebController::class, 'dashboard']);
 
-// Show Psikolog Register Form
-Route::get('/sp/psikolog/register', [PsikologController::class, 'register']);
+    // Show Psikolog Register Form
+    Route::get('/sp/psikolog/register', [PsikologController::class, 'register']);
 
-// Create New Psikolog Data
-Route::post('/sp/psikolog/create', [PsikologController::class, 'create']);
+    // Create New Psikolog Data
+    Route::post('/sp/psikolog/create', [PsikologController::class, 'create']);
 
-// Show Psikolog Data Edit Form
-Route::get('/sp/psikolog/edit', [PsikologController::class, 'edit']);
+    // Show Psikolog Data Edit Form
+    Route::get('/sp/psikolog/{psikolog}', [PsikologController::class, 'edit']);
 
-// Update Psikolog Data
-Route::put('/sp/psikolog/{psikolog}', [PsikologController::class, 'update']);
+    // Update Psikolog Data
+    Route::put('/sp/psikolog/{psikolog}', [PsikologController::class, 'update']);
 
-// Delete Psikolog Data
-Route::delete('/sp/psikolog/{psikolog}', [PsikologController::class, 'destroy']);
+    // Delete Psikolog Data
+    Route::delete('/sp/psikolog/{psikolog}', [PsikologController::class, 'destroy']);
 
-// Create New Testimoni
-Route::post('/sp/testimoni/create', [TestimoniController::class, 'create']);
+    // Create New Testimoni
+    Route::post('/sp/testimoni/create', [TestimoniController::class, 'create']);
 
-// Delete Testimoni
-Route::delete('/sp/testimoni/{testimoni}', [TestimoniController::class, 'destroy']);
+    // Delete Testimoni
+    Route::delete('/sp/testimoni/{testimoni}', [TestimoniController::class, 'destroy']);
+});
+
+

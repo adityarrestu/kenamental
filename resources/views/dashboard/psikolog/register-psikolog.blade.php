@@ -97,7 +97,6 @@
                     name="image"
                     class="form-control rounded-pill"
                     id="inputImg"
-                    value="{{old('img')}}"
                 />
 
                 @error('img')
